@@ -3,7 +3,7 @@ package Model;
 public class Worker extends Person{
     String post;
     int experience;
-    Long id = 0L;
+    int id = 0;
 
     public Worker(String post, int experience) {
         this.post = post;

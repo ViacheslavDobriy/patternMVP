@@ -1,8 +1,6 @@
 package View;
 
-import Model.Person;
-
-import java.util.List;
+import Model.Worker;
 
 /**
  * Описываю методы для работы с интерфейсом пользователя
@@ -10,5 +8,5 @@ import java.util.List;
 public interface UI {
     public void helloUser();
     public void showDataBase();
-    public void addWorker();
+    public void addWorker(Worker worker);
 }

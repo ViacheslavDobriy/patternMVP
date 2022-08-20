@@ -1,13 +1,16 @@
 package View;
 
-import Model.DataBaseOfWorkers;
-import Presenter.ConversationWithUser;
+import Model.Worker;
+import Presenter.RepositoryWorkers;
 
 /**
  * Описываю класс, который будет иметь точку входа
  */
 public class App{
     public static void main(String[] args) {
-        ConversationWithUser workersDB = new ConversationWithUser(DataBaseOfWorkers.dataBaseWorkers);
+        RepositoryWorkers workersDB = new RepositoryWorkers();
+        workersDB.addWorker(new Worker("Director", 5));
+        workersDB.addWorker(new Worker("Teacher", 6));
+        workersDB.helloUser();
     }
 }
